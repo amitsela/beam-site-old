@@ -1,0 +1,230 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one or more
+  ~ contributor license agreements.  See the NOTICE file distributed with
+  ~ this work for additional information regarding copyright ownership.
+  ~ The ASF licenses this file to You under the Apache License, Version 2.0
+  ~ (the "License"); you may not use this file except in compliance with
+  ~ the License.  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache</groupId>
+    <artifactId>apache</artifactId>
+    <version>15</version>
+  </parent>
+
+  <groupId>org.apache.beam</groupId>
+  <artifactId>site</artifactId>
+  <version>1.0.0-incubating-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Apache Beam</name>
+  <description>Apache Beam is an open source, unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs). Dataflow pipelines simplify the mechanics of large-scale batch and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow (a cloud service). Beam also brings DSL in different languages, allowing users to easily implement their data integration processes.</description>
+  <url>http://beam.incubator.apache.org</url>
+  
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Apache Software Foundation</name>
+        <url>http://www.apache.org</url>
+    </organization>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://issues.apache.org/jira/browse/BEAM</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Jenkins</system>
+        <url>https://builds.apache.org/job/beam</url>
+    </ciManagement>
+
+    <inceptionYear>2016</inceptionYear>
+
+    <mailingLists>
+        <mailingList>
+            <name>beam-dev</name>
+            <subscribe>dev-subscribe@beam.incubator.apache.org</subscribe>
+            <unsubscribe>dev-unsubscribe@beam.incubator.apache.org</unsubscribe>
+            <post>dev@beam.incubator.apache.org</post>
+            <archive>http://mail-archives.apache.org/mod_mbox/incubator-beam-dev/</archive>
+        </mailingList>
+        <mailingList>
+            <name>beam-commits</name>
+            <subscribe>commits-subscribe@beam.incubator.apache.org</subscribe>
+            <unsubscribe>commits-unsubscribe@beam.incubator.apache.org</unsubscribe>
+            <post>commits@beam.incubator.apache.org</post>
+            <archive>http://mail-archives.apache.org/mod_mbox/incubator-beam-commits/</archive>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>scm:git:https://git-wip-us.apache.org/repos/asf/incubator-beam.git</connection>
+        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/incubator-beam.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://git-wip-us.apache.org/repos/asf/incubator-beam.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>jbonofre</id>
+            <name>Jean-Baptiste Onofré</name>
+            <email>jbonofre@apache.org</email>
+            <timezone>+1</timezone>
+            <roles>
+                <role>champion</role>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Talend</organization>
+            <organizationUrl>http://www.talend.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Aljoscha Krettek</name>
+            <email>aljoscha@apache.org</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Amit Sela</name>
+            <email>amitsela33@gmail.com</email>
+            <roles>
+                <role>committer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Ben Chambers</name>
+            <email>bchambers@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Craig Chambers</name>
+            <email>chambers@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Dan Halperin</name>
+            <email>dhalperi@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Davor Bonaci</name>
+            <email>davor@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Frances Perry</name>
+            <email>fjp@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>James Malone</name>
+            <email>jamesmalone@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <!-- we put a fake URL here for staging to work -->
+            <url>scp://www.mycompany.com/www/docs/project/</url>
+        </site>
+    </distributionManagement>
+
+    <build>
+       <plugins>
+           <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-publish-plugin</artifactId>
+                <version>1.0-beta-2</version>
+                <configuration>
+                    <checkinComment>[scm-publish] Updating Beam website</checkinComment>
+                    <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/incubator/beam/website/</pubScmUrl>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>lt.velykis.maven.skins</groupId>
+                        <artifactId>reflow-velocity-tools</artifactId>
+                        <version>1.1.1</version>
+                    </dependency>
+                    <!-- Reflow skin requires Velocity >= 1.7  -->
+                    <dependency>
+                        <groupId>org.apache.velocity</groupId>
+                        <artifactId>velocity</artifactId>
+                        <version>1.7</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+       </plugins>
+    </build>
+
+</project>
