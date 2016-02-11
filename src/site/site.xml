@@ -23,31 +23,31 @@
         <version>1.1.1</version>
     </skin>
 
-    <!--
-    <googleAnalyticsAccountId></googleAnalyticsAccountId>
-    -->
+    <googleAnalyticsAccountId>UA-73650088-1</googleAnalyticsAccountId>
+    <publishDate position="bottom" format="yyyy-MM-dd" />
+    <version position="bottom" />
 
     <custom>
         <reflowSkin>
             <!-- Make this to 'false' for local development, i.e. file:// URLs -->
             <protocolRelativeURLs>false</protocolRelativeURLs>
             <smoothScroll>true</smoothScroll>
-            <theme>bootswatch-united</theme>
+            <theme>bootswatch-cosmo</theme>
             <highlightJs>true</highlightJs>
             <highlightJsTheme>github</highlightJsTheme>
             <bootstrapIcons>true</bootstrapIcons>
             <absoluteResourceURL>http://beam.incubator.apache.org/</absoluteResourceURL>
             <brand>
                 <name><![CDATA[
-                    <img src="http://beam.incubator.apache.org/images/beam-123x43.png" />
+			<span>Apache Beam (incubating)</span>
                 ]]></name>
                 <href>http://beam.incubator.apache.org</href>
             </brand>
-            <!--slogan>Reference implementation of the OASIS Context Server specification</slogan-->
-            <titleTemplate>%2$s | %1$s</titleTemplate>
-            <toc>sidebar</toc>
+            <slogan>Unified Batch and strEAM data processing</slogan>
+            <titleTemplate>%1$s | %2$s</titleTemplate>
+            <toc>top</toc>
             <!--tocTopMax>6</tocTopMax-->
-            <topNav>Documentation|Standard|Contribute|Privacy|Community</topNav>
+            <topNav>About|Documentation|Standard|Contribute|Privacy|Community</topNav>
             <bottomNav>
                 <column>Documentation</column>
 		<column>Contribute|Community</column>
@@ -95,13 +95,13 @@
     </custom>
 
     <body>
-
+	<links>
+		<item name="About" href="./" /> 
+	</links>
         <menu name="Documentation" inherit="top">
-            <item name="Home" href="./" />
             <item name="Getting started" href="getting-started.html"/>
-            <item name="Guides" href="guides.html" />
-            <item name="Concepts" href="concepts.html"/>
-            <item name="Samples" href="samples.html"/>
+	    <item name="Apache Beam technical docs" href="https://goo.gl/ps8twC"/> 
+	    <item name="Technical vision" href="https://goo.gl/nk5OM0"/>
         </menu>
 
         <menu name="parent" ref="parent"/>

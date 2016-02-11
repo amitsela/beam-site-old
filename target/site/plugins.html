@@ -8,12 +8,12 @@
 
 	<head>
 		<meta charset="UTF-8" />
-		<title>Project Build Plugins | Apache Beam</title>
+		<title>Apache Beam | Project Build Plugins</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="" />
 		<meta http-equiv="content-language" content="en" />
  
-		<link href="http://netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css" rel="stylesheet" />
+		<link href="http://netdna.bootstrapcdn.com/bootswatch/2.3.2/cosmo/bootstrap.min.css" rel="stylesheet" />
 		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet" />
 		<link href=".//css/bootswatch.css" rel="stylesheet" />
 		<link href=".//css/reflow-skin.css" rel="stylesheet" />
@@ -32,7 +32,21 @@
 
 
 
-	</head>
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-73650088-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		</head>
 
 	<body class="page-plugins project-site" data-spy="scroll" data-offset="60" data-target="#toc-scroll-target">
 
@@ -44,17 +58,16 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="./"><img src="http://beam.incubator.apache.org/images/beam-123x43.png" /></a>
+					<a class="brand" href="./"><span>Apache Beam (incubating)</span></a>
 					<div class="nav-collapse collapse" id="top-nav-collapse">
 						<ul class="nav pull-right">
+							<li ><a href="./" title="About">About</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li ><a href="./" title="Home">Home</a></li>
 									<li ><a href="getting-started.html" title="Getting started">Getting started</a></li>
-									<li ><a href="guides.html" title="Guides">Guides</a></li>
-									<li ><a href="concepts.html" title="Concepts">Concepts</a></li>
-									<li ><a href="samples.html" title="Samples">Samples</a></li>
+									<li ><a href="https://goo.gl/ps8twC" title="Apache Beam technical docs" class="externalLink">Apache Beam technical docs</a></li>
+									<li ><a href="https://goo.gl/nk5OM0" title="Technical vision" class="externalLink">Technical vision</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -90,18 +103,30 @@
 	================================================== -->
 
 	<header>
-		<div>
-			<ul class="breadcrumb">
-				<li class="projectVersion version-date">Version: 1.0.0-incubating-SNAPSHOT</li>
-				<li class="divider">|</li>
-				<li class="publishDate version-date">Last Published: 2016-02-11</li>
-			</ul>
+		<hr class="toc-separator" />
+		<div id="toc-bar" class="navbar" data-spy="affix" data-offset-top="250">
+			<div class="navbar-inner">
+				<div id="toc-scroll-target" class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target="#toc-nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse collapse" id="toc-nav-collapse">
+						<ul id="toc" class="nav">
+						<li class="toplevel"><a href="#Project_Build_Plugins" title="Project Build Plugins">Project Build Plugins</a></li>
+						<li class="divider-vertical"></li>
+						<li class="toplevel"><a href="#Project_Report_Plugins" title="Project Report Plugins">Project Report Plugins</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
 	<div class="main-body">
 	<div class="row">
-		<div class="span8">
+		<div class="span12">
 			<div class="body-content">
 <div class="section"> 
  <div class="page-header">
@@ -157,17 +182,6 @@
 </div>
 			</div>
 		</div>
-		<div class="span4">
-			<div id="toc-sidebar">
-				<div class="well">
-					<ul class="nav nav-list">
-						<li class="nav-header">Table of Contents</li>
-		<li><a href="#Project_Build_Plugins" title="Project Build Plugins">Project Build Plugins</a>
-		<li><a href="#Project_Report_Plugins" title="Project Report Plugins">Project Report Plugins</a>
-					</ul>
-				</div>
-			</div>
-		</div>
 	</div>
 	</div>
 
@@ -182,19 +196,13 @@
 					<ul class="nav nav-list">
 						<li class="nav-header">Documentation</li>
 						<li >
-							<a href="./" title="Home">Home</a>
-						</li>
-						<li >
 							<a href="getting-started.html" title="Getting started">Getting started</a>
 						</li>
 						<li >
-							<a href="guides.html" title="Guides">Guides</a>
+							<a href="https://goo.gl/ps8twC" title="Apache Beam technical docs" class="externalLink">Apache Beam technical docs</a>
 						</li>
 						<li >
-							<a href="concepts.html" title="Concepts">Concepts</a>
-						</li>
-						<li >
-							<a href="samples.html" title="Samples">Samples</a>
+							<a href="https://goo.gl/nk5OM0" title="Technical vision" class="externalLink">Technical vision</a>
 						</li>
 					</ul>
 				</div>
@@ -239,6 +247,7 @@
 			<div class="span12">
 				<p class="pull-right"><a href="#">Back to top</a></p>
 				<p class="copyright">Copyright &copy;2016 <a href="http://www.apache.org">Apache Software Foundation</a>. All Rights Reserved.</p>
+				<p class="version-date"><span class="projectVersion">Version: 1.0.0-incubating-SNAPSHOT. </span><span class="publishDate">Last Published: 2016-02-11. </span></p>
 				<p><a href="http://github.com/andriusvelykis/reflow-maven-skin" title="Reflow Maven skin">Reflow Maven skin</a> by <a href="http://andrius.velykis.lt" target="_blank" title="Andrius Velykis">Andrius Velykis</a>.</p>
 			</div>
 		</div>

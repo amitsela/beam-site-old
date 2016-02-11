@@ -8,14 +8,13 @@
 
 	<head>
 		<meta charset="UTF-8" />
-		<title>Concepts | Apache Beam</title>
+		<title>Apache Beam | Concepts</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="" />
 		<meta http-equiv="content-language" content="en" />
  
-		<link href="http://netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css" rel="stylesheet" />
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet" />
-		<link href=".//css/bootswatch.css" rel="stylesheet" />
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href=".//css/docs.css" rel="stylesheet" />
 		<link href=".//css/reflow-skin.css" rel="stylesheet" />
 
 		<link href="http://yandex.st/highlightjs/7.5/styles/github.min.css" rel="stylesheet" />
@@ -44,13 +43,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="./"><img src="http://beam.incubator.apache.org/images/beam-123x43.png" /></a>
+					<a class="brand" href="./"><span>Apache Beam (incubating)</span></a>
 					<div class="nav-collapse collapse" id="top-nav-collapse">
 						<ul class="nav pull-right">
+							<li ><a href="./" title="About">About</a></li>
 							<li class="dropdown active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li ><a href="./" title="Home">Home</a></li>
 									<li ><a href="getting-started.html" title="Getting started">Getting started</a></li>
 									<li ><a href="guides.html" title="Guides">Guides</a></li>
 									<li class="active"><a href="" title="Concepts">Concepts</a></li>
@@ -90,18 +89,67 @@
 	================================================== -->
 
 	<header>
-		<div>
-			<ul class="breadcrumb">
-				<li class="projectVersion version-date">Version: 1.0.0-incubating-SNAPSHOT</li>
-				<li class="divider">|</li>
-				<li class="publishDate version-date">Last Published: 2016-02-11</li>
-			</ul>
+		<hr class="toc-separator" />
+		<div id="toc-bar" class="navbar" data-spy="affix" data-offset-top="250">
+			<div class="navbar-inner">
+				<div id="toc-scroll-target" class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target="#toc-nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse collapse" id="toc-nav-collapse">
+						<ul id="toc" class="nav">
+						<li class="toplevel"><a href="#concepts" title="Concepts">Concepts</a></li>
+						<li class="toplevel"><a href="#Items_and_types" title="Items and types">Items and types</a></li>
+						<li class="toplevel"><a href="#Events" title="Events">Events</a></li>
+						<li class="toplevel"><a href="#Profiles" title="Profiles">Profiles</a></li>
+						<li class="toplevel"><a href="#Sessions" title="Sessions">Sessions</a></li>
+						<li class="divider-vertical"></li>
+						<li class="toplevel"><a href="#extending_unomi_via_plugins" title="Extending Unomi via plugins">Extending Unomi via plugins</a></li>
+						<li class="toplevel"><a href="#Types_vs_instances" title="Types vs. instances">Types vs. instances</a></li>
+						<li class="toplevel"><a href="#Plugin_structure" title="Plugin structure">Plugin structure</a></li>
+						<li class="dropdown">
+							<a href="#Extension_points" title="Extension points" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Extension points <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<!-- Repeat the item, otherwise it is not clickable as the dropdown root -->
+								<li><a href="#Extension_points" title="Extension points">Extension points</a></li>
+								<li class="divider"></li>
+								<li><a href="#ActionType" title="ActionType">ActionType</a></li>
+								<li><a href="#ConditionType" title="ConditionType">ConditionType</a></li>
+								<li><a href="#Persona" title="Persona">Persona</a></li>
+								<li><a href="#PropertyMergeStrategyType" title="PropertyMergeStrategyType">PropertyMergeStrategyType</a></li>
+								<li><a href="#PropertyType" title="PropertyType">PropertyType</a></li>
+								<li><a href="#Rule" title="Rule">Rule</a></li>
+								<li><a href="#Scoring" title="Scoring">Scoring</a></li>
+								<li><a href="#Segments" title="Segments">Segments</a></li>
+								<li><a href="#Tag" title="Tag">Tag</a></li>
+								<li><a href="#ValueType" title="ValueType">ValueType</a></li>
+
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#Other_Unomi_entities" title="Other Unomi entities" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Other Unomi entities <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<!-- Repeat the item, otherwise it is not clickable as the dropdown root -->
+								<li><a href="#Other_Unomi_entities" title="Other Unomi entities">Other Unomi entities</a></li>
+								<li class="divider"></li>
+								<li><a href="#UserList" title="UserList">UserList</a></li>
+								<li><a href="#Goal" title="Goal">Goal</a></li>
+								<li><a href="#Campaign" title="Campaign">Campaign</a></li>
+
+							</ul>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
 	<div class="main-body">
 	<div class="row">
-		<div class="span8">
+		<div class="span12">
 			<div class="body-content">
 <!-- ~ Licensed to the Apache Software Foundation (ASF) under one or more
   ~ contributor license agreements.  See the NOTICE file distributed with
@@ -347,53 +395,6 @@
 </div>
 			</div>
 		</div>
-		<div class="span4">
-			<div id="toc-sidebar">
-				<div class="well">
-					<ul class="nav nav-list">
-						<li class="nav-header">Table of Contents</li>
-		<li class="dropdown"><a href="#concepts" title="Concepts">Concepts <b class="caret"></b></a>
-			<ul class="nav nav-list">
-		<li><a href="#Items_and_types" title="Items and types">Items and types</a>
-		<li><a href="#Events" title="Events">Events</a>
-		<li><a href="#Profiles" title="Profiles">Profiles</a>
-		<li><a href="#Sessions" title="Sessions">Sessions</a>
-				<li class="divider"></li>
-			</ul>
-		</li>
-		<li class="dropdown"><a href="#extending_unomi_via_plugins" title="Extending Unomi via plugins">Extending Unomi via plugins <b class="caret"></b></a>
-			<ul class="nav nav-list">
-		<li><a href="#Types_vs_instances" title="Types vs. instances">Types vs. instances</a>
-		<li><a href="#Plugin_structure" title="Plugin structure">Plugin structure</a>
-		<li class="dropdown"><a href="#Extension_points" title="Extension points">Extension points <b class="caret"></b></a>
-			<ul class="nav nav-list">
-		<li><a href="#ActionType" title="ActionType">ActionType</a>
-		<li><a href="#ConditionType" title="ConditionType">ConditionType</a>
-		<li><a href="#Persona" title="Persona">Persona</a>
-		<li><a href="#PropertyMergeStrategyType" title="PropertyMergeStrategyType">PropertyMergeStrategyType</a>
-		<li><a href="#PropertyType" title="PropertyType">PropertyType</a>
-		<li><a href="#Rule" title="Rule">Rule</a>
-		<li><a href="#Scoring" title="Scoring">Scoring</a>
-		<li><a href="#Segments" title="Segments">Segments</a>
-		<li><a href="#Tag" title="Tag">Tag</a>
-		<li><a href="#ValueType" title="ValueType">ValueType</a>
-				<li class="divider"></li>
-			</ul>
-		</li>
-		<li class="dropdown"><a href="#Other_Unomi_entities" title="Other Unomi entities">Other Unomi entities <b class="caret"></b></a>
-			<ul class="nav nav-list">
-		<li><a href="#UserList" title="UserList">UserList</a>
-		<li><a href="#Goal" title="Goal">Goal</a>
-		<li><a href="#Campaign" title="Campaign">Campaign</a>
-				<li class="divider"></li>
-			</ul>
-		</li>
-			</ul>
-		</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 	</div>
 	</div>
 
@@ -407,9 +408,6 @@
 				<div class="span3 bottom-nav">
 					<ul class="nav nav-list">
 						<li class="nav-header">Documentation</li>
-						<li >
-							<a href="./" title="Home">Home</a>
-						</li>
 						<li >
 							<a href="getting-started.html" title="Getting started">Getting started</a>
 						</li>
@@ -465,6 +463,7 @@
 			<div class="span12">
 				<p class="pull-right"><a href="#">Back to top</a></p>
 				<p class="copyright">Copyright &copy;2016 <a href="http://www.apache.org">Apache Software Foundation</a>. All Rights Reserved.</p>
+				<p class="version-date"><span class="projectVersion">Version: 1.0.0-incubating-SNAPSHOT. </span><span class="publishDate">Last Published: 2016-02-11. </span></p>
 				<p><a href="http://github.com/andriusvelykis/reflow-maven-skin" title="Reflow Maven skin">Reflow Maven skin</a> by <a href="http://andrius.velykis.lt" target="_blank" title="Andrius Velykis">Andrius Velykis</a>.</p>
 			</div>
 		</div>

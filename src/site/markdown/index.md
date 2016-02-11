@@ -15,29 +15,14 @@
   ~ limitations under the License.
   -->
   
-#Apache Beam 
+# About Beam 
 
-Apache Beam (incubating) is an open source, unified model and set of language-specific SDKs for defining and executing
-data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration
-Patterns (EIPs) and Domain Specific Languages (DSL). Beam pipelines simplify the mechanics of large-scale batch
-and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google
-Cloud Dataflow (a cloud service). Beam also brings DSL in different languages, allowing users to easily 
-implement their data processes.
+Apache Beam is an open source, unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs). Dataflow pipelines simplify the mechanics of large-scale batch and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow (a cloud service). Beam also brings DSL in different languages, allowing users to easily implement their data integration processes.
 
-### News
+>The Apache Beam project is in the process of bootstrapping. This includes the creation of project resources, the refactoring of
+ the initial code submission, and the formulation of project documentation, planning, and design documents. For more information about Beam see the [getting started](getting-started.html) page.
 
-- 2016-02-10 First website mockup
-- 2016-02-02 JIRA, mailing lists, git, website space created.
-- 2016-02-01 Project enters incubation.
-
-### Articles & slides
-
-* [The world beyond batch: Streaming 101](https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101)
-* [The world beyong batch: Streaming 102](https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-102)
-* [Introducing Apache Beam](http://blog.nanthrax.net/2016/01/introducing-apache-dataflow/)
-* [Dataflow and open source - proposal to join the Apache Incubator](http://googlecloudplatform.blogspot.fr/2016/01/Dataflow-and-open-source-proposal-to-join-the-Apache-Incubator.html)
-
-### What can I use Beam for ?
+### Using Apache Beam 
 
 You can use Beam for nearly any kind of data processing task, including both batch and streaming data processing.
 Beam provides a unified data model that can represent any size data set, including an unbounded or infinite data
@@ -78,9 +63,13 @@ from a variety of formats and storage technologies. Your pipeline can read text 
 See the [programming model documentation](programming-model.html) to lear more about how Beam implements these
 concepts.
 
+### News
+| **Date**  | **Event** |
+|---|---|
+| 2016-02-11 | Website created |
+| 2016-02-02 | JIRA, mailing lists, git, website space created |
+| 2016-02-01 | Project entered incubation |
+
 ### Apache project
 
 Beam is an [Apache Software Foundation](http://www.apache.org) project, available under the Apache v2 license.
-It's a complete open community, always listening proposals and comments.
-[Sources],  [mailing lists], [issue tracker]: it's fully open, you can access directly.
-We also love contributions: don't hesitate to [contribute].
