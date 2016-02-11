@@ -24,14 +24,7 @@
     </skin>
 
     <!--
-    <poweredBy>
-        <logo name="Karaf" href="http://karaf.apache.org/"
-              img="http://karaf.apache.org/images/karaf-logo.png"/>
-    </poweredBy>
-    -->
-
-    <!--
-    <googleAnalyticsAccountId>UA-70313240-1</googleAnalyticsAccountId>
+    <googleAnalyticsAccountId></googleAnalyticsAccountId>
     -->
 
     <custom>
@@ -39,9 +32,10 @@
             <!-- Make this to 'false' for local development, i.e. file:// URLs -->
             <protocolRelativeURLs>false</protocolRelativeURLs>
             <smoothScroll>true</smoothScroll>
-            <theme>default</theme>
+            <theme>bootswatch-united</theme>
             <highlightJs>true</highlightJs>
             <highlightJsTheme>github</highlightJsTheme>
+            <bootstrapIcons>true</bootstrapIcons>
             <absoluteResourceURL>http://beam.incubator.apache.org/</absoluteResourceURL>
             <brand>
                 <name><![CDATA[
@@ -55,9 +49,11 @@
             <!--tocTopMax>6</tocTopMax-->
             <topNav>Documentation|Standard|Contribute|Privacy|Community</topNav>
             <bottomNav>
-                <column>Documentation|Standard|Contribute|Privacy|Community</column>
-                <column>modules</column>
-                <column>reports</column>
+                <column>Documentation</column>
+		<column>Contribute|Community</column>
+		<column>Privacy</column>
+                <!--<column>modules</column>-->
+                <!--<column>reports</column>-->
             </bottomNav>
             <bottomDescription>
                 © 2016 Apache Software Foundation 
@@ -102,10 +98,8 @@
 
         <menu name="Documentation" inherit="top">
             <item name="Home" href="./" />
-            <item name="Building" href="building.html" />
             <item name="Getting started" href="getting-started.html"/>
             <item name="Guides" href="guides.html" />
-            <item name="API and References" href="api.html" />
             <item name="Concepts" href="concepts.html"/>
             <item name="Samples" href="samples.html"/>
         </menu>
@@ -127,7 +121,6 @@
         <menu name="Community" inherit="top">
             <item name="Mailing lists" href="mail-lists.html"/>
             <item name="Team" href="team-list.html"/>
-            <item name="Maturity model report card" href="maturity-model-report.html"/>
         </menu>
 
     </body>

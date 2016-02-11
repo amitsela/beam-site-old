@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
   
-![Beam logo](images/beam-349x124.png)
+#Apache Beam 
 
-Apache Beam is an open source, unified model and set of language-specific SDKs for defining and executing
+Apache Beam (incubating) is an open source, unified model and set of language-specific SDKs for defining and executing
 data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration
 Patterns (EIPs) and Domain Specific Languages (DSL). Beam pipelines simplify the mechanics of large-scale batch
 and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google

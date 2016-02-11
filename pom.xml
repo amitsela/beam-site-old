@@ -72,6 +72,13 @@
             <post>commits@beam.incubator.apache.org</post>
             <archive>http://mail-archives.apache.org/mod_mbox/incubator-beam-commits/</archive>
         </mailingList>
+        <mailingList>
+            <name>beam-user</name>
+            <subscribe>user-subscribe@beam.incubator.apache.org</subscribe>
+            <unsubscribe>user-unsubscribe@beam.incubator.apache.org</unsubscribe>
+            <post>user@beam.incubator.apache.org</post>
+            <archive>http://mail-archives.apache.org/mod_mbox/incubator-beam-user/</archive>
+        </mailingList>
     </mailingLists>
 
     <scm>
@@ -83,35 +90,25 @@
 
     <developers>
         <developer>
-            <id>jbonofre</id>
-            <name>Jean-Baptiste Onofré</name>
-            <email>jbonofre@apache.org</email>
+            <id>aljoscha</id>
+            <name>Aljoscha Krettek</name>
+            <email>aljoscha@apache.org</email>
             <timezone>+1</timezone>
             <roles>
-                <role>champion</role>
                 <role>committer</role>
                 <role>PPMC</role>
             </roles>
-            <organization>Talend</organization>
-            <organizationUrl>http://www.talend.com</organizationUrl>
-        </developer>
-        <developer>
-            <id></id>
-            <name>Aljoscha Krettek</name>
-            <email>aljoscha@apache.org</email>
-            <timezone>-8</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-            <organization>Google</organization>
-            <organizationUrl>http://www.google.com</organizationUrl>
+            <organization>data Artisans</organization>
+            <organizationUrl>http://data-artisans.com</organizationUrl>
         </developer>
         <developer>
             <id></id>
             <name>Amit Sela</name>
             <email>amitsela33@gmail.com</email>
+            <timezone>-8</timezone>
             <roles>
                 <role>committer</role>
+                <role>PPMC</role>
             </roles>
         </developer>
         <developer>
@@ -121,6 +118,7 @@
             <timezone>-8</timezone>
             <roles>
                 <role>committer</role>
+                <role>PPMC</role>
             </roles>
             <organization>Google</organization>
             <organizationUrl>http://www.google.com</organizationUrl>
@@ -132,6 +130,7 @@
             <timezone>-8</timezone>
             <roles>
                 <role>committer</role>
+                <role>PPMC</role>
             </roles>
             <organization>Google</organization>
             <organizationUrl>http://www.google.com</organizationUrl>
@@ -173,9 +172,128 @@
             <organizationUrl>http://www.google.com</organizationUrl>
         </developer>
         <developer>
-            <id></id>
+            <id>jamesmalone</id>
             <name>James Malone</name>
-            <email>jamesmalone@google.com</email>
+            <email>jamesmalone@apache.org</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>jbonofre</id>
+            <name>Jean-Baptiste Onofré</name>
+            <email>jbonofre@apache.org</email>
+            <timezone>+1</timezone>
+            <roles>
+                <role>champion</role>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Talend</organization>
+            <organizationUrl>http://www.talend.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>jwills</id>
+            <name>Josh Wills</name>
+            <email>jwills@apache.org</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Kostas Tzoumas</name>
+            <email>kostas@data-artisans.com</email>
+            <timezone>+1</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>data Artisans</organization>
+            <organizationUrl>http://data-artisans.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Kenneth Knowles</name>
+            <email>klk@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Luke Cwik</name>
+            <email>lcwik@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>mxm</id>
+            <name>Maximilian Michels</name>
+            <email>mxm@apache.org</email>
+            <timezone>+1</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>data Artisans</organization>
+            <organizationUrl>http://data-artisans.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Stephan Ewen</name>
+            <email>stephan@data-artisans.com</email>
+            <timezone>+1</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>data Artisans</organization>
+            <organizationUrl>http://data-artisans.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Tom White</name>
+            <email>tom@cloudera.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Cloudera</organization>
+            <organizationUrl>http://www.cloudera.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Tyler Akidau</name>
+            <email>takidau@google.com</email>
+            <timezone>-8</timezone>
+            <roles>
+                <role>committer</role>
+                <role>PPMC</role>
+            </roles>
+            <organization>Google</organization>
+            <organizationUrl>http://www.google.com</organizationUrl>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Robert Bradshaw</name>
+            <email>robertwb@google.com</email>
             <timezone>-8</timezone>
             <roles>
                 <role>committer</role>
