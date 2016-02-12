@@ -321,6 +321,9 @@
                 <configuration>
                     <checkinComment>[scm-publish] Updating Beam website</checkinComment>
                     <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/incubator/beam/website/</pubScmUrl>
+                    <content>target/site</content>
+                    <tryUpdate>true</tryUpdate>
+                    <skipDeletedFiles>true</skipDeletedFiles>
                 </configuration>
             </plugin>
             <plugin>
