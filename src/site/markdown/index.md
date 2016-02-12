@@ -31,15 +31,15 @@ set from a continuously updating data source such as Kafka.
 In particular, Beam pipelines can represent high-volume computations, where the steps in your job need to process an amount of data
 that exceeds the memory capacity of a cost-effective cluster. Beam is particularly useful for [Embarrassingly Parallel](http://en.wikipedia.org/wiki/Embarassingly_parallel)
 data processing tasks, in which the problem can be decomposed into many smaller bundles of data that can be processed
-indepently and in parallel.
+independently and in parallel.
 
-You can also use Beam for Extract, Transform, and Load (ETL) taks and pure data integration. These tasks are useful
+You can also use Beam for Extract, Transform, and Load (ETL) tasks and pure data integration. These tasks are useful
 for moving data between different storage media and data sources, transforming data into a more desirable format,
 or loading data onto a new system.
 
 ### Programming Model
 
-Beam provides a simple and elegant [programming model](programming-model.html) to express your data processing jobs.
+Beam provides a simple and elegant [programming model](https://cloud.google.com/dataflow/model/programming-model) to express your data processing jobs.
 Each job is represented by a data processing pipeline that you create by writing a program with Beam. Each pipeline
 is an independent entity that reads some input data, performs some transforms on that data to gain useful or
 actionable intelligence about it, and produces some resulting output data. A pipeline's transform might include
@@ -60,7 +60,7 @@ set.
  * _I/O APIs for a variety of data formats_. Beam provides APIs that let your pipeline read and write data to and
 from a variety of formats and storage technologies. Your pipeline can read text files, Avro files, and more.
 
-See the [programming model documentation](programming-model.html) to lear more about how Beam implements these
+See the [programming model documentation](programming-model.html) to learn more about how Beam implements these
 concepts.
 
 ### News
