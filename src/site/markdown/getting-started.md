@@ -28,7 +28,7 @@
 
 ### Current code
 
-The following [GitHub](https://www.github.com) repositories vontain code which will be incorporated into Apache Beam.
+The following [GitHub](https://www.github.com) repositories contain code which will be incorporated into Apache Beam.
 
 * [Dataflow Java SDK](https://github.com/GoogleCloudPlatform/DataflowJavaSDK)
 * [Flink Dataflow runner](https://github.com/dataArtisans/flink-dataflow)
@@ -39,5 +39,7 @@ These code repositories will be refactored and marged together (along with other
 ### Documentation
 
 * [Apache Beam incubation proposal](https://goo.gl/KJrEl7)
-* [Apache Beam technical vision](https://goo.gl/nk5OM0)
+* **Apache Beam technical vision**
+    * [Detailed](https://goo.gl/5qZt3d)
+    * [Summary](https://goo.gl/nk5OM0)
 * [Apache Beam technical documentation](https://goo.gl/ps8twC)

@@ -28,7 +28,7 @@ You can use Beam for nearly any kind of data processing task, including both bat
 Beam provides a unified data model that can represent any size data set, including an unbounded or infinite data
 set from a continuously updating data source such as Kafka.
 
-In particular, Beam excels at high volume computation, where the steps in your job need to process an amount of data
+In particular, Beam pipelines can represent high-volume computations, where the steps in your job need to process an amount of data
 that exceeds the memory capacity of a cost-effective cluster. Beam is particularly useful for [Embarrassingly Parallel](http://en.wikipedia.org/wiki/Embarassingly_parallel)
 data processing tasks, in which the problem can be decomposed into many smaller bundles of data that can be processed
 indepently and in parallel.
