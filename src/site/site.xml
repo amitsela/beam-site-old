@@ -36,7 +36,7 @@
             <highlightJs>true</highlightJs>
             <highlightJsTheme>github</highlightJsTheme>
             <bootstrapIcons>true</bootstrapIcons>
-            <absoluteResourceURL>http://beam.incubator.apache.org/</absoluteResourceURL>
+			<absoluteResourceURL>http://beam.incubator.apache.org/</absoluteResourceURL>
             <brand>
                 <name><![CDATA[
 			<span>Apache Beam (incubating)</span>
@@ -47,7 +47,7 @@
             <titleTemplate>%1$s | %2$s</titleTemplate>
             <toc>top</toc>
             <!--tocTopMax>6</tocTopMax-->
-            <topNav>About|Documentation|Standard|Contribute|Privacy|Community</topNav>
+			<topNav>About|Documentation|Standard|Contribute|Privacy|Community</topNav>
             <bottomNav>
                 <column>Documentation</column>
 		<column>Contribute|Community</column>
@@ -122,7 +122,5 @@
             <item name="Mailing lists" href="mail-lists.html"/>
             <item name="Team" href="team-list.html"/>
         </menu>
-
     </body>
-
 </project>
